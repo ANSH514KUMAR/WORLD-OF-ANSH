@@ -7,7 +7,7 @@ body{
 }
 
 .Intro-Card{
-background-image: url("./Images/game-controller-outline.svg");
+background-image: url("../Images/game-controller-outline.svg");
 background-repeat: no-repeat;
 margin-top: 50px;
 height: auto;
