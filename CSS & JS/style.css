@@ -4,6 +4,7 @@
 }
 body{
     background-color: black;
+    user-select: none;
 }
 
 .Intro-Card{
@@ -22,7 +23,7 @@ background-position: center;
 }
 .Intro-Card h1{
     color: white;
-    font-size: x-large;
+    font-size: 20px;
 }
 .Intro-Card b{
     font-weight: none;
@@ -53,17 +54,16 @@ text-align: center;
     margin-top: 30px;
     height:30px;
     width: 100%;
-    user-select: none;
     }
-    .border-style .Line{
+.border-style .Line{
     background-color: rgb(142, 21, 255);
     width: 98%;
     height: 4px;
     margin-left: auto;
     border-radius: 8px;
     margin-right: auto;
-    
-    }    
+
+}    
 .border-style .Circle{
     content: '';
     display: block;
@@ -99,13 +99,21 @@ text-align: center;
 
 }
 .Card .row .App{
-    height: 130px;
+    height: 140px;
     float: left;
     background-color: #1a1a1a;
     width: 100px;
     margin: 5px;
+    overflow: hidden;
 }
 .Card .row .App img{
     height: fit-content;
-    margin: 10px;
+    background-color: #474747;
+    padding: 10px;
+}
+.Card .row .App p{
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 15px;
 }
