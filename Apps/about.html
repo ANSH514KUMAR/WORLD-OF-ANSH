@@ -13,6 +13,8 @@
 }
 body{
     background-color: black;
+    color: white;
+    text-decoration: none;
 }
 #Back{
     color: white;
@@ -21,10 +23,35 @@ body{
     padding-left: 10px;
     cursor: pointer;
 }
-
+.About-Section{
+    margin-inline: 10%;
+    width: 80%;
+    padding: 10px;
+}
+.Heighlight{
+    color: orange;
+    font-size: 15px;
+}
+#Footer{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
 </style>
 <body>
-    <p id="Back" onclick="history.back()">×</p>
-    
+    <b id="Back" onclick="history.back()">×</b><br><br>
+    <div class="About-Section">
+    <center><h3>About</h3></center> <br><br>
+    <p>
+    Developer : <b class="Heighlight"> Ansh Kumar</b> <br>
+    Made In : <b class="Heighlight"> India</b><br>
+    Type : Apps / Games <br> 
+  </p>
+    </div>
+<div id="Footer">
+    <center><P>YOU ARE MOST WELCOME TO <br><b class="Heighlight">WORLD OF ANSH</b></P></center> 
+</div>
+
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS & JS/navbar.css">
     <link rel="stylesheet" href="../CSS & JS/sidepannale.css">
-    <title>Document</title>
+    <title>Download App</title>
 </head>
 <style>
 *{
@@ -16,8 +16,11 @@
 body{
     background-color: black;
     color: white;
-    padding-bottom: 30px;
     user-select: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .Main{
     margin-top: 50px;
@@ -40,14 +43,15 @@ body{
 .name-download{
     padding-top: 10PX;
 }
+
 .name-download HEADER{
     font-size: 20px;
 }
 .tags{
-     color: rgba(255, 255, 255, 0.63);
+     color: orange;
      padding: 5px;
      user-select: none;
-     word-spacing: 10px;
+     word-spacing: 8px;
      font-size: 15px;
 }
 .name-download button{
@@ -62,16 +66,13 @@ body{
     border: none;
     text-decoration: none;
 }
-.name-download a{
-    text-decoration: none;
-    color: inherit;
-}
 .Card{
     margin-top: 5px;
     height: auto;
     width: 100%;
     color: white;
     background-color: black;
+    margin-bottom: 10px;
 }
 .Card ::-webkit-scrollbar{
     height: 3px;
@@ -84,21 +85,28 @@ body{
     overflow-x: auto;
 }
 .Card .row{
-    height: 110px;
+    height: auto;
     width: max-content;
     display: block;
-
 }
-.Card .row .App{
-    height: 130px;
+.Card .row .More-App{
+    height: 140px;
     float: left;
     background-color: #1a1a1a;
     width: 100px;
     margin: 5px;
+    overflow: hidden;
 }
-.Card .row .App img{
+.Card .row .More-App img{
     height: fit-content;
-    margin: 10px;
+    background-color: #474747;
+    padding: 10px;
+}
+.Card .row .More-App p{
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 15px;
 }
 .Images img{
     height: 130px;
@@ -119,6 +127,44 @@ body{
     color: orange;
     font-size: 15px;
 }
+.Card-Q{
+    background-color: #1a1a1a; 
+    padding-bottom: 5px;  
+}
+.Question{
+    display: block;
+    contain: content;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+.Question img{
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    cursor: pointer;
+}
+.Question p{
+    padding-top: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.Question #Hide1, #Hide2, #Hide3{
+    display: none;
+}
+.Answer{
+    min-height: 100px;
+    display: none;
+    padding-left: 10px;
+}
+.Answer p{
+    padding-top: 10px;
+    font-size: 16px;
+}
 </style>
 <body>
 <div id="mySidepanel" class="sidepanel">
@@ -138,9 +184,9 @@ body{
             <img src="../Images/logo-android.svg">
     </div>
     <div class="name-download">
-           <header>App Name</header>
-           <p class="tags">#Action  #Classic  #Royel</p> 
-           <button><a href="" download="">Download</a></button>
+           <header id="appName">App Name</header>
+           <p class="tags">#Action  #Classic</p> 
+           <button><a href="" download="AppName">Download</a></button>
     </div>
 </div>
 <div class="Card">
@@ -158,90 +204,169 @@ body{
 </div>
 <div class="Detail">
   <h3 style=" padding-top: 10px;">About</h3>
-  <p>about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
-    about about about about about about about about about about about
+  <p>This App/Game Is One Of The Best App/Game Developed By <b> World Of Ansh </b> 
+    Which You Are Going To Like Very Much. This App Contain The Best Feature And Is Online/Offline
+    Type App. These Apps/Games Will even Run On Low End Device Without Facing Any Problem. This Is A 
+    User Frindely App/Game. <br><br>
+    This App Is A School App Which Will Kepp You Connected To Your School. This App Contain A Notice
+     Section Which Will Show You The Latest Notice Given By Your School. This Will Kepp You Updated.
   </p><br>
     <h3>Details</h3>
     <p>
     App Version :   <br>
     Operating System : Android<br>
     First Uploded On :  <br>
-    Developer : <b> Ansh Kumar</b> <br>
+    Developer : <b class="Heighlight"> Ansh Kumar</b> <br>
     Last Update :  <br>
     Made In : <b class="Heighlight"> India</b><br>
     Developed By : <b class="Heighlight"> WORLD OF ANSH</b>
   </p>
 </div>
 <div class="Card">
-    <h2 style="margin-left:10px; font-size: large; padding-top: 10px; ">Popular Apps</h2>
+    <h2 style="margin-left:10px; font-size: large; padding-top: 5px; ">Popular Apps</h2>
     <div class="Right-flow">
-    <div class="row">
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
-        </div>
-        <div class="App">
-        <a href="">
-            <img src="../Images/logo-android.svg">
-        </a>
+        <div class="row">
+            <div class="More-App">
+            <a href="">
+                <img src="../Images/logo-android.svg">
+                <p>App Name </p>
+            </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>
+            <div class="More-App">
+                <a href="">
+                    <img src="../Images/logo-android.svg">
+                    <p>App Name </p>
+                </a>
+            </div>            
         </div>
     </div>
+</div>
+
+<div class="Card-Q">
+    <h3 style="margin-left:10px; font-size: larger; padding-top: 10px;">Popular Questions :</h3>
+    <div class="Question" id="Q1">
+        <p>1. How To Download The Apps And Games ?</p>
+        <a href="#A1"><img src="../Images/chevron-down-circle.svg"onclick="ShowA1()" id="Show1"></a>
+        <img src="../Images/chevron-up-circle.svg" onclick="HideA1()" id="Hide1">
+    </div>
+    <div class="Answer" id="A1">
+        <p>Go to the Apps or Games Section Where You Will Get The List Of All Apps And Games Developed By <b class="Heighlight">World Of Ansh</b>.<br><br>
+        Then Click on The Application Or Game You Want To Download. <br><br>
+        Then A Web Page Will Open Containing The <b class="Heighlight">Download Link </b>At The Top With Some App Details. <br><br>
+        Now Just Go And <b class="Heighlight">Click On Download Botton </b> Which Is At Top Of The Web Page. <br><br>
+        Your App/Game Will Start Downloading. <br></p>
+    </div>
+    <div class="Question" id="Q2">
+        <p>2. How to Install In Android ?</p>
+        <a href="#A2"><img src="../Images/chevron-down-circle.svg"onclick="ShowA2()" id="Show2"></a>
+        <img src="../Images/chevron-up-circle.svg" onclick="HideA2()" id="Hide2">
+       </div>
+    <div class="Answer" id="A2">
+        <p>Once The App/Game File Is Downloaded, Just Go To Your <b class="Heighlight"> File Mannager </b>or <b class="Heighlight"> Google File </b> Application In Your Android. <br><br>
+        Then You Will See A Folder Named "<b class="Heighlight">Download</b>" (Where Your App/Game File is Saved). <br><br>
+        In The <b class="Heighlight"> Download Folder </b>  You Will See The App/Game File Which You Have Downloaded From Our WebSite. <br><br>
+        Click on That App/Game File And Then Sellect<b class="Heighlight"> Install</b> Button . <br><br>
+        Your App/Game Will Start Installing, And Once It Get Completed You Can Run The Application On Your Device. <br><br>  </p>
+    </div>
+    <div class="Question" id="Q3">
+        <p>3. Other Platforms For Downloading These Apps/Games?</p>
+        <a href="#A3"><img src="../Images/chevron-down-circle.svg"onclick="ShowA3()" id="Show3"></a>
+        <img src="../Images/chevron-up-circle.svg" onclick="HideA3()" id="Hide3">
+    </div>
+    <div class="Answer" id="A3">
+        <p> You Can Downlad Our Apps/Games From The Flowwing Platforms : <br><br>
+        UptoDown : <br>
+         <a href="https://" style="color: rgb(0, 183, 255);"> Click Here To Download</a> <br><br>
+         9Apps : <br>
+         <a href="https://" style="color: rgb(0, 183, 255);" id="Last"> Click Here To Download</a> <br><br></p>
     </div>
 </div>
 <script src="../CSS & JS/Menu.js"></script>
+<script>
+function ShowA1(){
+    document.getElementById("A1").style.display="Block";
+    document.getElementById("Hide1").style.display="Block";
+    document.getElementById("Show1").style.display="none";
+} 
+function HideA1(){
+    document.getElementById("A1").style.display="none";
+    document.getElementById("Hide1").style.display="none";
+    document.getElementById("Show1").style.display="block";
+} 
+function ShowA2(){
+    document.getElementById("A2").style.display="Block";
+    document.getElementById("Hide2").style.display="Block";
+    document.getElementById("Show2").style.display="none";
+} 
+function HideA2(){
+    document.getElementById("A2").style.display="none";
+    document.getElementById("Hide2").style.display="none";
+    document.getElementById("Show2").style.display="block";
+} 
+function ShowA3(){
+    document.getElementById("A3").style.display="Block";
+    document.getElementById("Hide3").style.display="Block";
+    document.getElementById("Show3").style.display="none";
+} 
+function HideA3(){
+    document.getElementById("A3").style.display="none";
+    document.getElementById("Hide3").style.display="none";
+    document.getElementById("Show3").style.display="block";
+} 
+</script>
 </body>
 </html>
