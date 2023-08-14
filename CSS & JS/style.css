@@ -12,17 +12,18 @@ a{
     text-decoration: none;
 }
 .Intro-Card{
-background-image: url("../Images/game-controller-outline.svg");
-background-repeat: no-repeat;
-margin-top: 50px;
-height: auto;
-width: 100%; 
-background-color: #1a1a1a;
-background-position: center;
+    margin-top: 0px;
+    background-image: url("../Garena-Free-Fire-PNG.png");
+    background-repeat: no-repeat; 
+    height: auto;
+    width: 100%; 
+    background-color: #1a1a1a;
+    background-position: bottom;
+
 }
 
 .Intro-Card header{
-    padding-top: 120px;
+    padding-top: 250px;
     margin-inline: 20px;
 }
 .Intro-Card h1{
@@ -157,3 +158,11 @@ text-align: center;
     cursor: pointer;
     z-index: 1;
 }
+/* .......Scroll Bar Fot y-axis................... */
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a200ff;
+}
+/* .......................... */
