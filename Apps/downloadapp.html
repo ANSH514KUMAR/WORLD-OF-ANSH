@@ -18,12 +18,21 @@ body{
     color: white;
     user-select: none;
 }
+/* .......Scroll Bar Fot y-axis................... */
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a200ff;
+}
+/* .......................... */
+
 a{
     text-decoration: none;
     color: inherit;
 }
 .Main{
-    margin-top: 50px;
+    margin-top: 55px;
     padding-top: 15px;
     height: 160px;
     background-color: black;
@@ -55,7 +64,7 @@ a{
      font-size: 15px;
 }
 .name-download button{
-    background-color: rgb(140, 17, 255);
+    background-color: rgb(132, 0, 255);
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -78,7 +87,11 @@ a{
     height: 3px;
 }
 .Card ::-webkit-scrollbar-thumb{
-    background-color: #8d0fd6;
+    background-color: #a200ff;
+    border-radius: 45px;
+}
+.Card :hover::-webkit-scrollbar{
+    height: 6px;
 }
 .Right-flow{
     overflow-y: hidden;
@@ -165,6 +178,7 @@ a{
     padding-top: 10px;
     font-size: 16px;
 }
+
 </style>
 <body>
 <div id="mySidepanel" class="sidepanel">
@@ -223,7 +237,7 @@ a{
   </p>
 </div>
 <div class="Card">
-    <h2 style="margin-left:10px; font-size: large; padding-top: 5px; ">Popular Apps</h2>
+    <h2 style="margin-left:10px; font-size: large; padding-top: 5px; ">Popular Apps <b style="color: orange; font-size: larger; padding: 5px;">›</b></h2>
     <div class="Right-flow">
         <div class="row">
             <div class="More-App">
@@ -298,9 +312,9 @@ a{
 
 <div class="Card-Q">
     <h3 style="margin-left:10px; font-size: larger; padding-top: 10px;">Popular Questions :</h3>
-    <div class="Question" id="Q1">
+    <div class="Question" id="Q1" onclick="SHOW1()" onclick="Hide1()">
         <p>1. How To Download The Apps And Games ?</p>
-        <a href="#A1"><img src="../Images/chevron-down-circle.svg"onclick="ShowA1()" id="Show1"></a>
+        <img src="../Images/chevron-down-circle.svg"onclick="ShowA1()" id="Show1">
         <img src="../Images/chevron-up-circle.svg" onclick="HideA1()" id="Hide1">
     </div>
     <div class="Answer" id="A1">
@@ -312,7 +326,7 @@ a{
     </div>
     <div class="Question" id="Q2">
         <p>2. How to Install In Android ?</p>
-        <a href="#A2"><img src="../Images/chevron-down-circle.svg"onclick="ShowA2()" id="Show2"></a>
+        <img src="../Images/chevron-down-circle.svg"onclick="ShowA2()" id="Show2">
         <img src="../Images/chevron-up-circle.svg" onclick="HideA2()" id="Hide2">
        </div>
     <div class="Answer" id="A2">

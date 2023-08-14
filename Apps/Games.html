@@ -12,12 +12,21 @@
 *{
     padding: 0px;
     margin: 0%;
+    text-decoration: none;
 }
 body{
     background-color: black;
     user-select: none;
     color: white;
 }
+/* .......Scroll Bar Fot y-axis................... */
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a200ff;
+}
+/* .......................... */
 .slideshow{
     margin-top: 55px;
     height: 220px;
@@ -41,7 +50,11 @@ body{
     height: 3px;
 }
 .Card ::-webkit-scrollbar-thumb{
-    background-color: #8d0fd6;
+    background-color: #a200ff;
+    border-radius: 45px;
+}
+.Card :hover::-webkit-scrollbar{
+    height: 6px;
 }
 .Right-flow{
     overflow-y: hidden;
@@ -72,6 +85,8 @@ body{
     padding-right: 2px;
     font-size: 15px;
 }
+
+
 </style>
 <body>
     <div id="mySidepanel" class="sidepanel">
@@ -92,7 +107,7 @@ body{
         <img src="../Images/logo-android.svg" class="mySlides">
     </div>
 <div class="Card">
-    <h2 style="margin-left:10px; font-size: large; padding-top: 5px; ">Popular Games</h2>
+    <h2 style="margin-left:10px; font-size: large; padding-top: 5px; ">Popular Games<b style="color: orange; font-size: larger; padding: 5px;">›</b></h2>
     <div class="Right-flow">
     <div class="row">
         <div class="App">
@@ -104,56 +119,67 @@ body{
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
         <div class="App">
         <a href="./downloadapp.html">
             <img src="../Images/logo-android.svg">
+            <p>App Name</p>
         </a>
         </div>
     </div>
     </div>
-</div>      
+</div>  
+    
 <script src="../CSS & JS/slideshow.js"></script>
 <script src="../CSS & JS/Menu.js"></script>
 </body>
